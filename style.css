@@ -1,0 +1,183 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+header {
+  border: 3px solid salmon;
+  width: 96%;
+  margin: 50px auto 15px auto;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+main {
+  border: 3px solid steelblue;
+  width: 96%;
+  margin: 20px auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.tony {
+  margin: 20px 120px;
+  width: 200px;
+}
+
+.hobbies{
+  font-size: 12px;
+  margin: auto;
+  width: 50%;
+}
+
+.hobbies ul{
+  list-style-type: square;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  font-size: 12px;
+}
+
+.navbar a{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: darkgrey;
+  text-decoration: none;
+  padding: 7px;
+  color: midnightblue;
+}
+
+.navbar a:hover{
+  color: white;
+  background-color: darkgreen;
+}
+
+.book{
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.book a {
+  color: midnightblue;
+  text-decoration: none;
+  background-color: darkgray;
+  padding: 7px;
+  margin: 0px auto 100px auto;
+}
+
+.book a:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+footer{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 3px solid darkgreen;
+  margin: 20px auto;
+  padding: 15px 0;
+  width: 96%
+}
+
+footer a {
+  color: midnightblue;
+  text-decoration: none;
+  background-color: darkgrey;
+  padding: 7px;
+  margin: auto 41%;
+}
+
+footer a:hover{
+  color: white;
+  background-color: darkgreen;
+}
+
+.container {
+  display: flex;
+}
+
+.blogpost { 
+  width: 300px; border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.b1 {
+  flex-grow: 1;
+}
+
+.b2 {
+  align-self: center;
+  flex-direction: column-reverse;
+}
+
+.b3 {
+  flex-direction: column-reverse;
+  order: -2;
+  align-self: flex-end;
+}
+
+.b4 {
+  align-self: flex-end;
+}
+
+.b5 {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 1024px) {
+
+  body {
+    background-color: darkkhaki;
+  }
+  
+  .navbar li{
+    font-size: 20px;
+  }
+
+  header{
+    width: 85%;
+  }
+
+  main{
+    width: 85%;
+  }
+
+  p {
+    font-size: 15px;
+    width: 50%;
+    line-height: 20px;
+    color: darkred;
+  }
+
+  .hobbies{
+    font-size: 20px;
+    margin: auto;
+  }
+
+  footer{
+    width: 85%;
+  }
+
+  .tony{
+    width: 400px;
+    margin: 40px 35%;
+  }
+
+}

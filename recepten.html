@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Recipes </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+       <div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="games.html">My Games</a></li> 
+                <li><a href="recepten.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>     
+            </ul>
+        </nav>
+        </div>
+
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Name:<input type="text" name="name"></label> 
+            </p>
+            <p>
+                <label>E-mail:<input type="email" name="email"></label>
+            </p>
+            <p>
+                <label>Telephone number:<input type="tel" name="telephone-number"></label>
+            </p>
+            <p>
+                <label>Age:<input type="number" id="age" min="1" max="150" name="age"></label>
+            </p>
+            <p>
+                <label>Date of birth:<input type="date" name="date-of-birth"></label>
+            </p>
+            <p>
+                <label>Gender </label>
+            </p>
+            <p>    
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </p>
+            <p>
+                <label>Favorite Cuisine</label>
+            </p>
+            <p>
+                <input type="checkbox" id="french" name="cuisine" value="french">
+                <label for="french">French</label><br>
+                <input type="checkbox" id="italian" name="cuisine" value="italian">
+                <label for="italian">Italian</label><br>
+                <input type="checkbox" id="spanish" name="cuisine" value="spanish">
+                <label for="spanish">Spanish</label><br>
+                <input type="checkbox" id="arabic" name="cuisine" value="arabic">
+                <label for="arabic">Arabic</label>
+            </p>
+            <p>
+                <label for="color">Favorite color</label>
+                <input type="color" id="color" name="favorite-color" value="color">
+            </p>
+            <p>
+                <label>Biography:</label>
+                <textarea name="bio"></textarea>
+            </p>
+            <p>
+                <label>Upload a recipe:</label>
+                <input type="file" name="recipe-file">
+            </p>
+            <p>
+                <label>Your website URL:</label>
+                <input type="url" name="website-url">
+            </p>
+            <p>
+                <button type="reset">Empty form</button>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </form>
+
+        
+    </body>
+</html>
